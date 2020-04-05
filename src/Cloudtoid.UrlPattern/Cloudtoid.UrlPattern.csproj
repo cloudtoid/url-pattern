@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>$(AppDotNetVersion)</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.*" />
+  </ItemGroup>
+
+  <!-- NuGet Packaging -->
+  <PropertyGroup>
+    <PackageId>Cloudtoid.UrlPattern</PackageId>
+    <Title>Cloudtoid.UrlPattern</Title>
+    <Authors>pedram@rezaei.us</Authors>
+    <PackageDescription>A simple approach to URL path pattern and pattern matching</PackageDescription>
+    <Copyright>Copyright (c) Cloudtoid</Copyright>
+    <IsPackable>true</IsPackable>
+    <PackageTags>pattern,url,url pattern,path pattern,regular expression,url,string,matching,pattern matching,routing,route,regex,regex match,segment,parsing,parser,parse,combinator,combinators,path,domain,text processing</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <VersionSuffix Condition=" '$(VersionSuffix)'=='' ">0</VersionSuffix>
+    <Version>1.0.$(VersionSuffix)</Version>
+  </PropertyGroup>
+
+</Project>

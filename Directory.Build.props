@@ -1,0 +1,46 @@
+<Project>
+
+  <!-- Paths -->
+  <PropertyGroup>
+    <Root>$(MSBuildThisFileDirectory)</Root>
+  </PropertyGroup>
+
+  <!-- .NET Runtime Versions -->
+  <PropertyGroup>
+    <LibraryDotNetVersion>netstandard2.1</LibraryDotNetVersion>
+    <AppDotNetVersion>netcoreapp3.1</AppDotNetVersion>
+  </PropertyGroup>
+
+  <!-- Build Settings -->
+  <PropertyGroup>
+    <Platforms>x64</Platforms>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <!-- Product Package Versions -->
+  <PropertyGroup>
+    <CloudtoidFrameworkVersion>1.0.9</CloudtoidFrameworkVersion>
+    <MicrosoftExtensionsVersion>3.1.*</MicrosoftExtensionsVersion>
+  </PropertyGroup>
+
+  <!-- Test Package Versions -->
+  <PropertyGroup>
+    <MicrosoftDotNetTestSdk>16.5.*</MicrosoftDotNetTestSdk>
+    <MSTestVersion>2.1.*</MSTestVersion>
+    <NSubstituteVersion>4.2.*</NSubstituteVersion>
+    <FluentAssertionsVersion>5.10.*</FluentAssertionsVersion>
+    <CoverletVersion>2.8.*</CoverletVersion>
+  </PropertyGroup>
+
+  <!-- Package dependencies -->
+  <ItemGroup>
+    <PackageReference Include="Cloudtoid.Framework" Version="$(CloudtoidFrameworkVersion)" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
+  </ItemGroup>
+
+</Project>
