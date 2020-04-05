@@ -1,6 +1,7 @@
 ﻿namespace Cloudtoid.UrlPattern.UnitTests
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using Cloudtoid.UrlPattern;
     using FluentAssertions;
@@ -27,6 +28,25 @@
             engine.TryMatch("/category", "/category/abc/product/efg", out var match, out var why).Should().BeTrue();
             match.Should().NotBeNull();
             match!.PathSuffix.Should().Be("/abc/product/efg");
+            why.Should().BeNull();
+        }
+
+        [TestMethod]
+        public void PatternEngineTryCompile()
+        {
+            engine.TryCompile("/category", out var compiledPattern, out var errors).Should().BeTrue();
+            compiledPattern.Should().NotBeNull();
+            compiledPattern!.Regex.ToString().Should().Be(@"\A/category");
+            errors.Should().BeNull();
+        }
+
+        [TestMethod]
+        public void TryMatchVariableNotPresentTest()
+        {
+            engine.TryMatch("/category/:catid(/product/:pid)", "/category/home", out var match, out var why).Should().BeTrue();
+            match.Should().NotBeNull();
+            match!.PathSuffix.Should().Be(string.Empty);
+            match.Variables.Should().BeEquivalentTo(new Dictionary<string, string>() { ["catid"] = "home" });
             why.Should().BeNull();
         }
 

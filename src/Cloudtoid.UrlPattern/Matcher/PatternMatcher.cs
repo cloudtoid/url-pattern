@@ -55,13 +55,14 @@
 
             foreach (var variableName in variableNames)
             {
-                if (groups.TryGetValue(variableName, out var group) && group.Success)
-                {
-                    if (result is null)
-                        result = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+                var group = groups[variableName];
+                if (!group.Success)
+                    continue;
 
-                    result.Add(variableName, group.Value);
-                }
+                if (result is null)
+                    result = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+                result.Add(variableName, group.Value);
             }
 
             return result is null
