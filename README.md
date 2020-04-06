@@ -1,6 +1,6 @@
 # URL Pattern Matcher
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/cloudtoid/url-patterns/blob/master/LICENSE)
+![](https://github.com/cloudtoid/url-pattern/workflows/publish/badge.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/cloudtoid/url-patterns/blob/master/LICENSE)
 
 We all know regular expressions are not the most user-friendly programming constructs. With this URL Pattern Matcher library, you can say goodbye to regex, and define URL path patterns that are simple to compose, easy to read, and a joy to debug.
 
