@@ -76,7 +76,7 @@ var match = engine.Match(
 
 ## Regular Expressions
 
-The pattern engine also supports [].net's regular expression syntax](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference). Please note that only named captures such as `"(?<prod>.+)"` are allowed. These captures are treated as variables.
+The pattern engine also supports [.net's regular expression syntax](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference). Please note that only named captures such as `"(?<prod>.+)"` are allowed. These captures are treated as variables.
 
 ```csharp
 var engine = new PatternEngine();
