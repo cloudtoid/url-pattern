@@ -19,6 +19,8 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore src/Cloudtoid.UrlPattern/Cloudtoid.UrlPattern.csproj
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
     - name: Pack
       run: dotnet pack --configuration Release --no-build --output . --version-suffix ${{github.run_number}} src/Cloudtoid.UrlPattern/Cloudtoid.UrlPattern.csproj 
     - name: Push
