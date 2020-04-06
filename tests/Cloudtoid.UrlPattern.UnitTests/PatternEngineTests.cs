@@ -25,7 +25,7 @@
         public void PatternEngineUseAsLibrary()
         {
             var engine = new PatternEngine();
-            engine.TryMatch("/category", "/ action to runcategory/cat1/product/prod1", out var match, out var why).Should().BeTrue();
+            engine.TryMatch("/category", "/category/cat1/product/prod1", out var match, out var why).Should().BeTrue();
             match.Should().NotBeNull();
             match!.PathSuffix.Should().Be("/cat1/product/prod1");
             why.Should().BeNull();
