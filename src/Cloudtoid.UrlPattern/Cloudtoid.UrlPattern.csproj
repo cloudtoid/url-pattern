@@ -13,10 +13,13 @@
     <PackageId>Cloudtoid.UrlPattern</PackageId>
     <Title>Cloudtoid.UrlPattern</Title>
     <Authors>pedram@rezaei.us</Authors>
-    <PackageDescription>A simple approach to URL path pattern and pattern matching</PackageDescription>
+    <Company>cloudtoid</Company>
+    <PackageDescription>Tired of regex matching for URL paths? This library can help by providing a simple URL pattern parser and matcher</PackageDescription>
     <Copyright>Copyright (c) Cloudtoid</Copyright>
     <IsPackable>true</IsPackable>
     <PackageTags>url-pattern,pattern-matching,url-parser,url-parsing,regex,regular-expression,routing</PackageTags>
+    <RepositoryUrl>https://github.com/cloudtoid/url-pattern/</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/cloudtoid/url-pattern/blob/master/README.md</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <VersionSuffix Condition=" '$(VersionSuffix)'=='' ">0</VersionSuffix>
     <Version>1.0.$(VersionSuffix)</Version>
