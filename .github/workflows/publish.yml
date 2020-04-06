@@ -22,4 +22,4 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release --no-build --output . --version-suffix ${{github.run_number}} src/Cloudtoid.UrlPattern/Cloudtoid.UrlPattern.csproj 
     - name: Push
-      run: dotnet nuget push Cloudtoid.UrlPattern.*.nupkg --source https://api.nuget.org/v3/index.json --api-key oy2amvim54vyji3atgiqglgzp6mpqhcehgv3rvitpxp6fq
+      run: dotnet nuget push Cloudtoid.UrlPattern.*.nupkg --source https://api.nuget.org/v3/index.json --api-key oy2i3f4kmvyoxw4b7efaterudwchha7ulest4yzcicefkq
