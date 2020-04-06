@@ -1,5 +1,7 @@
 # URL Pattern Matcher
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/cloudtoid/url-patterns/blob/master/LICENSE)
+
 We all know regular expressions are not the most user-friendly programming constructs. With this URL Pattern Matcher library, you can say goodbye to regex, and define URL path patterns that are simple to compose, easy to read, and a joy to debug.
 
 Cloudtoid's URL Pattern Matcher library is optimized for speed. It compiles the new patterns and caches the compiled version for future use. The pattern matcher component is tuned to pattern match without the need for backtracking.
@@ -130,3 +132,7 @@ Advanced users can also provide their own implementations of the above interface
 ## Author
 
 [**Pedram Rezaei**](https://www.linkedin.com/in/pedramrezaei/): Pedram is a software architect at Microsoft with years of experience building highly scalable and reliable cloud-native applications for Microsoft.
+
+## Credits
+
+This project was inspired by a similar npm package: [url-pattern](https://github.com/snd/url-pattern).

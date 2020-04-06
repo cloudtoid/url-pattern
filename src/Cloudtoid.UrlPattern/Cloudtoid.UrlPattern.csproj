@@ -16,7 +16,7 @@
     <PackageDescription>A simple approach to URL path pattern and pattern matching</PackageDescription>
     <Copyright>Copyright (c) Cloudtoid</Copyright>
     <IsPackable>true</IsPackable>
-    <PackageTags>pattern,url,url pattern,path pattern,regular expression,url,string,matching,pattern matching,routing,route,regex,regex match,segment,parsing,parser,parse,combinator,combinators,path,domain,text processing</PackageTags>
+    <PackageTags>url-pattern,pattern-matching,url-parser,url-parsing,regex,regular-expression,routing</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <VersionSuffix Condition=" '$(VersionSuffix)'=='' ">0</VersionSuffix>
     <Version>1.0.$(VersionSuffix)</Version>
