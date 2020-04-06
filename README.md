@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/cloudtoid/assets/master/logos/cloudtoid-black-red.png" width="100">
+<img src="https://raw.githubusercontent.com/cloudtoid/assets/master/logos/cloudtoid-black-red.svg" width="100">
 
 # URL Pattern Matcher
 
