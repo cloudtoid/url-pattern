@@ -26,6 +26,12 @@ This library has almost 100% test code coverage with plenty of tests.
 
 The NuGet package for this library is published [here](https://www.nuget.org/packages/Cloudtoid.UrlPattern/).
 
+## URL Path
+
+This library only matches the path section of the URL. That is the section after the host and does not include the [query string](https://en.wikipedia.org/wiki/Query_string) or the [URL fragment](https://en.wikipedia.org/wiki/Fragment_identifier) portions. For instance, in the URL below, it is the `/path/over/there` section of the URL and must always start with a `'/'`.
+
+`https://host:80/path/over/there?query#fragment`
+
 ## Pattern Modes
 
 The syntax for the URL pattern is pretty simple and comes in 3 flavors:
