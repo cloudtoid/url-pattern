@@ -54,7 +54,6 @@
         public void TryMatchTests()
         {
             ShouldNotMatch("/segment", "/product");
-
             ShouldMatch("/product", "/product");
             ShouldNotMatch("/product/", "/product");
             ShouldMatch("/product/", "/product/");
@@ -70,10 +69,12 @@
             ShouldMatch("(/product)/(1*(/))", "/1234");
             ShouldMatch("(/product)/(1*(/))", "/1234/");
             ShouldMatch("(/product)/(1*/)", "/1234/");
-
             ShouldMatch("/product/:id", "/product/1234", variables: ("id", "1234"));
             ShouldMatch("/product(/:id)", "/product/1234", variables: ("id", "1234"));
             ShouldMatch("/product(/:id)", "/product");
+            ShouldMatch("/", "/product", pathSuffix: "product");
+            ShouldMatch("(/product)", "/", pathSuffix: "/");
+            ShouldMatch("/(product)", "/");
 
             ShouldMatch(
                 pattern: "/category/:category/product/:product",
