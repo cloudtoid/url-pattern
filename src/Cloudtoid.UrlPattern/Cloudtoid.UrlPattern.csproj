@@ -14,7 +14,7 @@
     <Title>Cloudtoid.UrlPattern</Title>
     <Authors>pedram@rezaei.us</Authors>
     <Company>cloudtoid</Company>
-    <PackageDescription>Tired of regex matching for URL paths? This library can help by providing a simple URL pattern parser and matcher</PackageDescription>
+    <PackageDescription>This is a powerful, yet simple, URL path pattern parser and matcher</PackageDescription>
     <Copyright>Copyright (c) Cloudtoid</Copyright>
     <IsPackable>true</IsPackable>
     <PackageTags>url-pattern,pattern-matching,url-parser,url-parsing,regex,regular-expression,routing</PackageTags>
