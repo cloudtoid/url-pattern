@@ -11,18 +11,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cloudtoid.UrlPattern.UnitTe
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Release|x64 = Release|x64
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{072C2E73-84EA-45C1-B571-82C2E2E3B722}.Debug|x64.ActiveCfg = Debug|x64
-		{072C2E73-84EA-45C1-B571-82C2E2E3B722}.Debug|x64.Build.0 = Debug|x64
-		{072C2E73-84EA-45C1-B571-82C2E2E3B722}.Release|x64.ActiveCfg = Release|x64
-		{072C2E73-84EA-45C1-B571-82C2E2E3B722}.Release|x64.Build.0 = Release|x64
-		{FD4E435E-478F-46DA-8686-9C15B12C9516}.Debug|x64.ActiveCfg = Debug|x64
-		{FD4E435E-478F-46DA-8686-9C15B12C9516}.Debug|x64.Build.0 = Debug|x64
-		{FD4E435E-478F-46DA-8686-9C15B12C9516}.Release|x64.ActiveCfg = Release|x64
-		{FD4E435E-478F-46DA-8686-9C15B12C9516}.Release|x64.Build.0 = Release|x64
+		{072C2E73-84EA-45C1-B571-82C2E2E3B722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072C2E73-84EA-45C1-B571-82C2E2E3B722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072C2E73-84EA-45C1-B571-82C2E2E3B722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072C2E73-84EA-45C1-B571-82C2E2E3B722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4E435E-478F-46DA-8686-9C15B12C9516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4E435E-478F-46DA-8686-9C15B12C9516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4E435E-478F-46DA-8686-9C15B12C9516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4E435E-478F-46DA-8686-9C15B12C9516}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
