@@ -27,7 +27,7 @@
 
   <!-- Test Package Versions -->
   <PropertyGroup>
-    <MicrosoftDotNetTestSdk>16.5.*</MicrosoftDotNetTestSdk>
+    <MicrosoftDotNetTestSdk>16.6.*</MicrosoftDotNetTestSdk>
     <MSTestVersion>2.1.*</MSTestVersion>
     <NSubstituteVersion>4.2.*</NSubstituteVersion>
     <FluentAssertionsVersion>5.10.*</FluentAssertionsVersion>
