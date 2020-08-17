@@ -1,13 +1,13 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Diagnostics.CodeAnalysis;
-    using System.Globalization;
-    using System.Linq;
-    using System.Text.RegularExpressions;
-    using static Contract;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.Linq;
+using System.Text.RegularExpressions;
+using static Cloudtoid.Contract;
 
+namespace Cloudtoid.UrlPattern
+{
     internal sealed class PatternCompiler : IPatternCompiler
     {
         private readonly IPatternTypeResolver resolver;

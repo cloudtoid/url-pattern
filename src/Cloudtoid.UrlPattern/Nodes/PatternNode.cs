@@ -1,7 +1,7 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 
+namespace Cloudtoid.UrlPattern
+{
     /// <summary>
     /// This is the base class for all the pattern nodes
     /// </summary>

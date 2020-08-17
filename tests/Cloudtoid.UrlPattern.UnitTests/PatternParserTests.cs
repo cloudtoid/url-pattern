@@ -1,9 +1,8 @@
-﻿namespace Cloudtoid.UrlPattern.UnitTests
-{
-    using Cloudtoid.UrlPattern;
-    using FluentAssertions;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using FluentAssertions;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+namespace Cloudtoid.UrlPattern.UnitTests
+{
     [TestClass]
     public sealed class PatternParserTests
     {

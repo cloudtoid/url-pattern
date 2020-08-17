@@ -1,8 +1,8 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System.Diagnostics.CodeAnalysis;
-    using Microsoft.AspNetCore.Http;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.AspNetCore.Http;
 
+namespace Cloudtoid.UrlPattern
+{
     public interface IPatternMatcher
     {
         /// <summary>

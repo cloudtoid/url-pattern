@@ -1,13 +1,13 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System;
-    using System.Collections.Concurrent;
-    using System.Collections.Generic;
-    using System.Diagnostics.CodeAnalysis;
-    using System.Text;
-    using Microsoft.AspNetCore.Http;
-    using static Contract;
+﻿using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Text;
+using Microsoft.AspNetCore.Http;
+using static Cloudtoid.Contract;
 
+namespace Cloudtoid.UrlPattern
+{
     public sealed class PatternEngine : IPatternEngine
     {
         private readonly IPatternCompiler compiler;

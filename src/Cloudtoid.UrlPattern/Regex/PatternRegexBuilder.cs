@@ -1,8 +1,8 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System.Text;
-    using System.Text.RegularExpressions;
+﻿using System.Text;
+using System.Text.RegularExpressions;
 
+namespace Cloudtoid.UrlPattern
+{
     internal sealed class PatternRegexBuilder : PatternNodeVisitor
     {
         private static readonly string SegmentStart = Regex.Escape(@"/");

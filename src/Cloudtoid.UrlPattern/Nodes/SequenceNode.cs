@@ -1,9 +1,9 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System.Collections.Generic;
-    using System.Linq;
-    using static Contract;
+﻿using System.Collections.Generic;
+using System.Linq;
+using static Cloudtoid.Contract;
 
+namespace Cloudtoid.UrlPattern
+{
     /// <summary>
     /// Represents a sequence of pattern nodes
     /// </summary>

@@ -1,13 +1,13 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.Immutable;
-    using System.Diagnostics.CodeAnalysis;
-    using System.Text.RegularExpressions;
-    using Microsoft.AspNetCore.Http;
-    using static Contract;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.Diagnostics.CodeAnalysis;
+using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Http;
+using static Cloudtoid.Contract;
 
+namespace Cloudtoid.UrlPattern
+{
     internal sealed class PatternMatcher : IPatternMatcher
     {
         /// <inheritdoc/>

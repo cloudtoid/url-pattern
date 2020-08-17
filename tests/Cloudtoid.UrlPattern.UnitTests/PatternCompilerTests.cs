@@ -1,11 +1,10 @@
-﻿namespace Cloudtoid.UrlPattern.UnitTests
-{
-    using System.Linq;
-    using Cloudtoid.UrlPattern;
-    using FluentAssertions;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Linq;
+using FluentAssertions;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+namespace Cloudtoid.UrlPattern.UnitTests
+{
     [TestClass]
     public class PatternCompilerTests
     {

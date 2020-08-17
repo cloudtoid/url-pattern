@@ -1,7 +1,7 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using static Contract;
+﻿using static Cloudtoid.Contract;
 
+namespace Cloudtoid.UrlPattern
+{
     /// <summary>
     /// This node represents a full text match.
     /// </summary>

@@ -1,9 +1,9 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System.Collections.Generic;
-    using System.Text.RegularExpressions;
-    using static Contract;
+﻿using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using static Cloudtoid.Contract;
 
+namespace Cloudtoid.UrlPattern
+{
     public sealed class CompiledPattern
     {
         internal CompiledPattern(

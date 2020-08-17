@@ -1,8 +1,8 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System;
-    using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
+namespace Cloudtoid.UrlPattern
+{
     internal sealed class PatternCompilerErrorsSink
     {
         private List<PatternCompilerError>? errors;

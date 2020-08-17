@@ -1,8 +1,8 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System;
-    using System.Text.RegularExpressions;
+﻿using System;
+using System.Text.RegularExpressions;
 
+namespace Cloudtoid.UrlPattern
+{
     internal static class RegexFactory
     {
         private static readonly TimeSpan MatchTimeout = TimeSpan.FromSeconds(1);

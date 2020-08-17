@@ -1,7 +1,7 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 
+namespace Cloudtoid.UrlPattern
+{
     public static class PatternVariables
     {
         private static readonly int[] CharToIndex = new int[123];

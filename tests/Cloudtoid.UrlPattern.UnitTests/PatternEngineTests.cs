@@ -1,14 +1,13 @@
-﻿namespace Cloudtoid.UrlPattern.UnitTests
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using Cloudtoid.UrlPattern;
-    using FluentAssertions;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using FluentAssertions;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+namespace Cloudtoid.UrlPattern.UnitTests
+{
     [TestClass]
     public class PatternEngineTests
     {

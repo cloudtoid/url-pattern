@@ -1,8 +1,8 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using Microsoft.Extensions.DependencyInjection;
-    using static Contract;
+﻿using Microsoft.Extensions.DependencyInjection;
+using static Cloudtoid.Contract;
 
+namespace Cloudtoid.UrlPattern
+{
     public static class DependencyInjection
     {
         public static IServiceCollection AddUrlPattern(this IServiceCollection services)

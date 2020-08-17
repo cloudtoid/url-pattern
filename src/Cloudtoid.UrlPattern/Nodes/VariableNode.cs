@@ -1,7 +1,7 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using static Contract;
+﻿using static Cloudtoid.Contract;
 
+namespace Cloudtoid.UrlPattern
+{
     /// <summary>
     /// Represents a variable in the pattern
     /// </summary>

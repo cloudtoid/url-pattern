@@ -1,8 +1,8 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System.Collections.Generic;
-    using static Contract;
+﻿using System.Collections.Generic;
+using static Cloudtoid.Contract;
 
+namespace Cloudtoid.UrlPattern
+{
     public sealed class PatternMatchResult
     {
         internal PatternMatchResult(

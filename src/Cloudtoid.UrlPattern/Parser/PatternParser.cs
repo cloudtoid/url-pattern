@@ -1,8 +1,8 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System.Diagnostics.CodeAnalysis;
-    using static Contract;
+﻿using System.Diagnostics.CodeAnalysis;
+using static Cloudtoid.Contract;
 
+namespace Cloudtoid.UrlPattern
+{
     internal sealed class PatternParser : IPatternParser
     {
         public bool TryParse(

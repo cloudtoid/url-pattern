@@ -1,7 +1,7 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 
+namespace Cloudtoid.UrlPattern
+{
     internal interface IPatternParser
     {
         bool TryParse(

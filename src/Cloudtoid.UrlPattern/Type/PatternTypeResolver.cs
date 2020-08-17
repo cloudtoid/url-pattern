@@ -1,7 +1,7 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using static Contract;
+﻿using static Cloudtoid.Contract;
 
+namespace Cloudtoid.UrlPattern
+{
     internal sealed class PatternTypeResolver : IPatternTypeResolver
     {
         private const string Exact = "exact: ";

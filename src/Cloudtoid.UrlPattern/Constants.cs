@@ -1,7 +1,7 @@
-﻿namespace Cloudtoid.UrlPattern
-{
-    using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
+namespace Cloudtoid.UrlPattern
+{
     internal static class Constants
     {
         internal const string EscapeSequence = @"\\";

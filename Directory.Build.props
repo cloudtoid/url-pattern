@@ -21,17 +21,17 @@
 
   <!-- Product Package Versions -->
   <PropertyGroup>
-    <CloudtoidFrameworkVersion>1.0.9</CloudtoidFrameworkVersion>
+    <CloudtoidFrameworkVersion>1.0.*</CloudtoidFrameworkVersion>
     <MicrosoftExtensionsVersion>3.1.*</MicrosoftExtensionsVersion>
   </PropertyGroup>
 
   <!-- Test Package Versions -->
   <PropertyGroup>
-    <MicrosoftDotNetTestSdk>16.6.*</MicrosoftDotNetTestSdk>
+    <MicrosoftDotNetTestSdk>16.7.*</MicrosoftDotNetTestSdk>
     <MSTestVersion>2.1.*</MSTestVersion>
     <NSubstituteVersion>4.2.*</NSubstituteVersion>
     <FluentAssertionsVersion>5.10.*</FluentAssertionsVersion>
-    <CoverletVersion>2.8.*</CoverletVersion>
+    <CoverletVersion>2.9.*</CoverletVersion>
   </PropertyGroup>
 
   <!-- Package dependencies -->
