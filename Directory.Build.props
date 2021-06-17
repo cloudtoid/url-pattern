@@ -5,15 +5,10 @@
     <Root>$(MSBuildThisFileDirectory)</Root>
   </PropertyGroup>
 
-  <!-- .NET Runtime Versions -->
-  <PropertyGroup>
-    <LibraryDotNetVersion>netstandard2.1</LibraryDotNetVersion>
-    <AppDotNetVersion>netcoreapp3.1</AppDotNetVersion>
-  </PropertyGroup>
-
   <!-- Build Settings -->
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
+    <LangVersion>9.0</LangVersion>
     <Nullable>enable</Nullable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -23,16 +18,16 @@
   <PropertyGroup>
     <CloudtoidFrameworkVersion>1.0.*</CloudtoidFrameworkVersion>
     <CloudtoidCodeAnalysisVersion>1.0.*</CloudtoidCodeAnalysisVersion>
-    <MicrosoftExtensionsVersion>3.1.*</MicrosoftExtensionsVersion>
+    <MicrosoftExtensionsVersion>5.0.*</MicrosoftExtensionsVersion>
   </PropertyGroup>
 
   <!-- Test Package Versions -->
   <PropertyGroup>
-    <MicrosoftDotNetTestSdk>16.7.*</MicrosoftDotNetTestSdk>
-    <MSTestVersion>2.1.*</MSTestVersion>
+    <MicrosoftDotNetTestSdk>16.10.*</MicrosoftDotNetTestSdk>
+    <MSTestVersion>2.2.*</MSTestVersion>
     <NSubstituteVersion>4.2.*</NSubstituteVersion>
     <FluentAssertionsVersion>5.10.*</FluentAssertionsVersion>
-    <CoverletVersion>2.9.*</CoverletVersion>
+    <CoverletVersion>3.0.*</CoverletVersion>
   </PropertyGroup>
 
   <!-- Package dependencies -->

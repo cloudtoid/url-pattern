@@ -68,7 +68,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             compiler.TryCompile(pattern, out var compiledPattern, out var errors).Should().BeFalse();
             compiledPattern.Should().BeNull();
             errors.Should().NotBeNull();
-            errors.Select(i => i.ToString()).Should().BeEquivalentTo(expectedErrors);
+            errors!.Select(i => i.ToString()).Should().BeEquivalentTo(expectedErrors);
         }
 
         private void CompileAndValidate(string pattern, string expectedRegex, PatternType expectedType, params string[] variables)

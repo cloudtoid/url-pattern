@@ -8,7 +8,7 @@ We all know regular expressions are not the most user-friendly programming const
 
 Cloudtoid's URL Pattern Matcher library is optimized for speed. It compiles the new patterns and caches the compiled version for future use. The pattern matcher component is tuned to pattern match without the need for backtracking.
 
-This library supports `.netstandard2.1+` and is optimized for [.net dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection) but can also be used without DI.
+This library supports `.netcore3.1+` and `.net5.0` and is optimized for [.net dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection) but can also be used without DI.
 
 ```csharp
 var engine = new PatternEngine();
@@ -48,7 +48,7 @@ In the example above (`"/category/:cat/product/:prod"`), `cat` and `prod` are bo
 
 ## Optional Sections
 
-Optional elements are included in paranthesis: `'('` and `')'`. For instance `/product` is an optional segment in `"/category/:cat(/product)/:prod"`. The followig paths are a match for this pattern:
+Optional elements are included in parenthesis: `'('` and `')'`. For instance `/product` is an optional segment in `"/category/:cat(/product)/:prod"`. The following paths are a match for this pattern:
 
 - `/category/bike/product/bmx-123`
 - `/category/bike/bmx-123`

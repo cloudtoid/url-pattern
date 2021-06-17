@@ -1,9 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>$(AppDotNetVersion)</TargetFrameworks>
-  </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\src\Cloudtoid.UrlPattern\Cloudtoid.UrlPattern.csproj" />
   </ItemGroup>
