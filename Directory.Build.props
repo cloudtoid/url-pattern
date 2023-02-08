@@ -24,16 +24,19 @@
   <!-- Test Package Versions -->
   <PropertyGroup>
     <MicrosoftDotNetTestSdk>17.4.*</MicrosoftDotNetTestSdk>
-    <MSTestVersion>2.2.*</MSTestVersion>
+    <MSTestVersion>3.0.*</MSTestVersion>
     <NSubstituteVersion>4.4.*</NSubstituteVersion>
-    <FluentAssertionsVersion>6.8.*</FluentAssertionsVersion>
+    <FluentAssertionsVersion>6.9.*</FluentAssertionsVersion>
     <CoverletVersion>3.2.*</CoverletVersion>
   </PropertyGroup>
 
   <!-- Package dependencies -->
   <ItemGroup>
     <PackageReference Include="Cloudtoid.Framework" Version="$(CloudtoidFrameworkVersion)" />
-    <PackageReference Include="Cloudtoid.CodeAnalysis" Version="$(CloudtoidCodeAnalysisVersion)" />
+    <PackageReference Include="Cloudtoid.CodeAnalysis" Version="$(CloudtoidCodeAnalysisVersion)">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="$(MicrosoftExtensionsVersion)" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="$(MicrosoftExtensionsVersion)" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
