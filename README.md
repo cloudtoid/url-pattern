@@ -10,7 +10,7 @@ We all know regular expressions are not the most user-friendly programming const
 
 Cloudtoid's URL Pattern Matcher library is optimized for speed. It compiles the new patterns and caches the compiled version for future use. The pattern matcher component is tuned to pattern match without the need for backtracking.
 
-This library supports `.netcore3.1+`, `.net6.0` and `.net7.0` and is optimized for [.net dependency injection][DI] but can also be used without DI.
+This library supports `.NET 10` and is optimized for [.net dependency injection][DI] but can also be used without DI.
 
 ```csharp
 var engine = new PatternEngine();

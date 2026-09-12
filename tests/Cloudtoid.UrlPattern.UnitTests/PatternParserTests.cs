@@ -19,7 +19,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             var pattern = ParseAndValidate("a");
             pattern.Should().BeEquivalentTo(
                 new MatchNode("a"),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -28,7 +28,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             var pattern = ParseAndValidate("valid-value");
             pattern.Should().BeEquivalentTo(
                 new MatchNode("valid-value"),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -37,7 +37,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             var pattern = ParseAndValidate("/");
             pattern.Should().BeEquivalentTo(
                 SegmentStartNode.Instance,
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -46,7 +46,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             var pattern = ParseAndValidate("*");
             pattern.Should().BeEquivalentTo(
                 WildcardNode.Instance,
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -55,7 +55,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             var pattern = ParseAndValidate("(value)");
             pattern.Should().BeEquivalentTo(
                 new OptionalNode(new MatchNode("value")),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -64,7 +64,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             var pattern = ParseAndValidate("(*)");
             pattern.Should().BeEquivalentTo(
                 new OptionalNode(WildcardNode.Instance),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -103,7 +103,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             var pattern = ParseAndValidate(":variable");
             pattern.Should().BeEquivalentTo(
                 new VariableNode("variable"),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -112,7 +112,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             var pattern = ParseAndValidate(":variable0");
             pattern.Should().BeEquivalentTo(
                 new VariableNode("variable0"),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -121,7 +121,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             var pattern = ParseAndValidate(":variable-placeholder");
             pattern.Should().BeEquivalentTo(
                 new VariableNode("variable") + new MatchNode("-placeholder"),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -143,7 +143,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
                     new MatchNode("v"),
                     new VariableNode("version"),
                     SegmentStartNode.Instance),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
 
             pattern.Should().BeEquivalentTo(
                 SegmentStartNode.Instance
@@ -152,7 +152,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
                 + new MatchNode("v")
                 + new VariableNode("version")
                 + SegmentStartNode.Instance,
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -167,7 +167,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
                     SegmentStartNode.Instance,
                     new MatchNode("v"),
                     new VariableNode("version")),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
 
             pattern.Should().BeEquivalentTo(
                 SegmentStartNode.Instance
@@ -175,7 +175,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
                 + SegmentStartNode.Instance
                 + new MatchNode("v")
                 + new VariableNode("version"),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -194,7 +194,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
                 + SegmentStartNode.Instance
                 + new VariableNode("id")
                 + SegmentStartNode.Instance,
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -212,7 +212,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
                 + new MatchNode("product")
                 + SegmentStartNode.Instance
                 + new VariableNode("id"),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -228,7 +228,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
                 + new MatchNode("product")
                 + SegmentStartNode.Instance
                 + new VariableNode("id"),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -243,7 +243,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
                 + SegmentStartNode.Instance
                 + new MatchNode("product")
                 + new OptionalNode((SegmentStartNode.Instance + new VariableNode("id"))!),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -259,7 +259,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
                 + new MatchNode("product")
                 + SegmentStartNode.Instance
                 + new OptionalNode(new VariableNode("id")),
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -277,7 +277,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
                     + SegmentStartNode.Instance)!)
                 + new MatchNode("product")
                 + SegmentStartNode.Instance,
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -350,7 +350,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
         private static void ExpectMatch(string value)
         {
             var pattern = ParseAndValidate(value);
-            pattern.Should().BeEquivalentTo(new MatchNode(value), o => o.RespectingRuntimeTypes());
+            pattern.Should().BeEquivalentTo(new MatchNode(value), o => o.PreferringRuntimeMemberTypes());
         }
 
         private static void ExpectVariableAndMatch(string value)
@@ -359,7 +359,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             pattern.Should()
                 .BeEquivalentTo(
                     new VariableNode("variable") + new MatchNode(value.ReplaceOrdinal(":variable", string.Empty)),
-                    o => o.RespectingRuntimeTypes());
+                    o => o.PreferringRuntimeMemberTypes());
         }
 
         private static void ExpectEndVariableAndMatch(string value)
@@ -368,7 +368,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
             pattern.Should()
                     .BeEquivalentTo(
                         new MatchNode(value.ReplaceOrdinal(":variable", string.Empty)) + new VariableNode("variable"),
-                        o => o.RespectingRuntimeTypes());
+                        o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -392,7 +392,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
         private static void ExpectEscapedAtBeginingMatch(string value)
         {
             var pattern = ParseAndValidate(value);
-            pattern.Should().BeEquivalentTo(new MatchNode(value.Substring(2)), o => o.RespectingRuntimeTypes());
+            pattern.Should().BeEquivalentTo(new MatchNode(value.Substring(2)), o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -416,7 +416,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
         private static void ExpectEscapedInMiddleMatch(string value)
         {
             var pattern = ParseAndValidate(value);
-            pattern.Should().BeEquivalentTo(new MatchNode("a") + new MatchNode(value.Substring(3)), o => o.RespectingRuntimeTypes());
+            pattern.Should().BeEquivalentTo(new MatchNode("a") + new MatchNode(value.Substring(3)), o => o.PreferringRuntimeMemberTypes());
         }
 
         [TestMethod]
@@ -428,7 +428,7 @@ namespace Cloudtoid.UrlPattern.UnitTests
                 + new MatchNode("placeholder")
                 + new VariableNode("variable")
                 + SegmentStartNode.Instance,
-                o => o.RespectingRuntimeTypes());
+                o => o.PreferringRuntimeMemberTypes());
         }
 
         private static PatternNode ParseAndValidate(string pattern)
