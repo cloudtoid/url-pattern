@@ -7,8 +7,8 @@
 
   <!-- Build Settings -->
   <PropertyGroup>
-    <TargetFrameworks>net7.0;net6.0;netcoreapp3.1</TargetFrameworks>
-    <LangVersion>11.0</LangVersion>
+    <TargetFrameworks>net10.0</TargetFrameworks>
+    <LangVersion>14.0</LangVersion>
     <Nullable>enable</Nullable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -16,18 +16,18 @@
 
   <!-- Product Package Versions -->
   <PropertyGroup>
-    <CloudtoidFrameworkVersion>1.0.*</CloudtoidFrameworkVersion>
-    <CloudtoidCodeAnalysisVersion>1.0.*</CloudtoidCodeAnalysisVersion>
-    <MicrosoftExtensionsVersion>6.0.*</MicrosoftExtensionsVersion>
+    <CloudtoidFrameworkVersion>1.0.121</CloudtoidFrameworkVersion>
+    <CloudtoidCodeAnalysisVersion>1.0.24</CloudtoidCodeAnalysisVersion>
+    <MicrosoftExtensionsVersion>10.0.12</MicrosoftExtensionsVersion>
   </PropertyGroup>
 
   <!-- Test Package Versions -->
   <PropertyGroup>
-    <MicrosoftDotNetTestSdk>17.4.*</MicrosoftDotNetTestSdk>
-    <MSTestVersion>3.0.*</MSTestVersion>
-    <NSubstituteVersion>4.4.*</NSubstituteVersion>
-    <FluentAssertionsVersion>6.9.*</FluentAssertionsVersion>
-    <CoverletVersion>3.2.*</CoverletVersion>
+    <MicrosoftDotNetTestSdk>18.10.0</MicrosoftDotNetTestSdk>
+    <MSTestVersion>4.4.0</MSTestVersion>
+    <NSubstituteVersion>6.2.0</NSubstituteVersion>
+    <FluentAssertionsVersion>8.10.0</FluentAssertionsVersion>
+    <CoverletVersion>10.0.1</CoverletVersion>
   </PropertyGroup>
 
   <!-- Package dependencies -->
