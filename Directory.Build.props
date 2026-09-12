@@ -17,7 +17,7 @@
   <!-- Product Package Versions -->
   <PropertyGroup>
     <CloudtoidFrameworkVersion>1.0.121</CloudtoidFrameworkVersion>
-    <CloudtoidCodeAnalysisVersion>1.0.24</CloudtoidCodeAnalysisVersion>
+    <CloudtoidCodeAnalysisVersion>1.0.28</CloudtoidCodeAnalysisVersion>
     <MicrosoftExtensionsVersion>10.0.12</MicrosoftExtensionsVersion>
   </PropertyGroup>
 
