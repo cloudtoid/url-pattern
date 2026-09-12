@@ -6,7 +6,7 @@
 
   <!-- NuGet Packaging -->
   <PropertyGroup>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>PACKAGE_README.md</PackageReadmeFile>
     <PackageId>Cloudtoid.UrlPattern</PackageId>
     <Title>Cloudtoid.UrlPattern</Title>
     <Authors>pedram@rezaei.us</Authors>
@@ -23,7 +23,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="../../README.md" Pack="true" PackagePath="/" />
+    <None Include="../../PACKAGE_README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
 
 </Project>
